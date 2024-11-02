@@ -2,12 +2,14 @@ import React from "react";
 import './Navbar.css'
 import logo from "../../assets/logo.png"
 import arrow_icon from "../../assets/arrow_icon.png"
+import { Link } from "react-router-dom";
+
 function Navbar(){
     return(
         <div className="navbar">
             {/* <img src={logo} alt="" className="logo" /> */}
             <ul>
-                <li>Home</li>
+                <Link to={'/'}><li>Home</li></Link>
                 <li>Features</li>
                 <li>Pricing</li>
                 <li>Blog</li>
